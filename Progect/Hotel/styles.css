@@ -20,8 +20,13 @@ body {
     max-width: 800px;
 }
 
-.hotel-img {
+.hotel-img1 {
     width: 100%;
+    border-radius: 8px;
+}
+
+.hotel-img2 {
+    width: 50%;
     border-radius: 8px;
 }
 
