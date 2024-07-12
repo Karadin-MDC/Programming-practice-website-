@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .hotel-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        .hotel-img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .hotel-info {
+            text-align: center;
+        }
+        .hotel-name {
+            font-size: 2em;
+            margin-top: 10px;
+        }
+        .hotel-rating {
+            color: gold;
+            margin: 10px 0;
+        }
+        .hotel-description {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .booking-form input,
+        .booking-form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="hotel-container">
+        <div class="hotel-info">
+            <img src="hotel.jpg" alt="Hotel Image" class="hotel-img">
+            <div class="hotel-name">Hotel Paradise</div>
+            <div class="hotel-rating">⭐⭐⭐⭐⭐</div>
+            <div class="hotel-description">
+                Welcome to Hotel Paradise, where luxury meets comfort. Enjoy a splendid stay with top-notch amenities and breathtaking views.
+            </div>
+        </div>
+        <div class="booking-form">
+            <h2>Book Your Stay</h2>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+            <button type="submit">Pay Now</button>
+        </div>
+    </div>
+</body>
+</html>
