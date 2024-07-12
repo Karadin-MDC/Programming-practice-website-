@@ -26,7 +26,7 @@ body {
 }
 
 .hotel-img2 {
-    width: 50%;
+    width: 47%;
     border-radius: 8px;
 }
 
@@ -72,4 +72,18 @@ body {
 
 .booking-form button:hover {
     background-color: #218838;
+}
+
+.card-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-details label,
+.card-details input {
+    width: 100%;
+    max-width: none;
+    
 }
