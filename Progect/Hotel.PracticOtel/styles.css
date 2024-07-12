@@ -88,3 +88,18 @@ body {
     max-width: none;
     
 }
+
+.home-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.home-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
