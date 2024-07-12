@@ -46,7 +46,8 @@ body {
 
 .hotel-description {
     font-size: 1em;
-    margin: 10px 0;
+    margin: 20px 0;
+    text-align: justify;
 }
 
 .booking-form {
