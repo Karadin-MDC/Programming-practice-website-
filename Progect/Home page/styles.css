@@ -47,7 +47,8 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .image-container img {
@@ -82,11 +83,11 @@ footer {
 
 .hotel-container img {
     position: absolute;
-    top: 20px; /* Змістити картинку вгору */
-    left: 20px; /* Змістити картинку вліво */
-    width: 350px; /* Ширина картинки */
-    height: auto; /* Автоматичне регулювання висоти збережуючи пропорції */
-    margin-left: 0px; /* Відступ від тексту або іншого контенту */
+    top: 20px; 
+    left: 20px; 
+    width: 350px;
+    height: auto;
+    margin-left: 0px;
 }
 
 .hotel-container a {
