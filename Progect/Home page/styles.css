@@ -69,3 +69,37 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.hotel-container {
+    background-color: #fff;
+    padding: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.hotel-container img {
+    position: absolute;
+    top: 20px; /* Змістити картинку вгору */
+    left: 20px; /* Змістити картинку вліво */
+    width: 350px; /* Ширина картинки */
+    height: auto; /* Автоматичне регулювання висоти збережуючи пропорції */
+    margin-left: 0px; /* Відступ від тексту або іншого контенту */
+}
+
+.hotel-container a {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    font-weight: bold; 
+    font-size: 24px; 
+}
+.hotel-container p {
+    position: absolute;
+    top: 60px;
+    left: 400px;
+}
