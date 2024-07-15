@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання готелю</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+<body>
+
+    <a href="../Home page/index.html" class="home-link">
+        <img src="../ico/—Pngtree—vector house icon_4046257.png" alt="Домік">
+        <span>Головна</span>
+    </a>
+
+    <div class="booking-form-container">
+        <h1 id="hotelName">Бронювання готелю</h1>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Номер картки</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="pricePerNight">Ціна за ніч</label>
+                <input type="number" id="pricePerNight" name="pricePerNight" readonly required>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Дата заїзду</label>
+                <input type="text" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Дата виїзду</label>
+                <input type="text" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="totalCost">Загальна сума</label>
+                <input type="text" id="totalCost" name="totalCost" readonly>
+            </div>
+            <button type="submit">Забронювати</button>
+        </form>
+        <a href="../End.screen/endScreen.html" class="button-link">
+            <button type="button">Завершити</button>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="hotels.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        
+
+        const hotelId = "hotel5";
+        
+        document.getElementById("hotelName").textContent = getHotelName(hotelId);
+        document.getElementById("pricePerNight").value = getHotelPrice(hotelId);
+    </script>
+
+</body>
+</html>
