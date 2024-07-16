@@ -51,6 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
             totalCost: totalCost
         };
 
+        // Зберігаємо дані у localStorage
+        localStorage.setItem('bookingDetails', JSON.stringify(bookingDetails));
+
         console.log("Booking Details:", bookingDetails);
 
         alert("Бронювання успішно оформлене!");
@@ -58,4 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
         bookingForm.reset();
         totalCostInput.value = "0.00";
     });
+
+    // Завантажуємо дані з localStorage при завантаженні сторінки
+    const savedBookingDetails = JSON.parse(localStorage.getItem('bookingDetails'));
+    if (savedBookingDetails) {
+        document.getElementById("name").value = savedBookingDetails.name;
+        document.getElementById("email").value = savedBookingDetails.email;
+        document.getElementById("cardNumber").value = savedBookingDetails.cardNumber;
+        checkinInput.value = savedBookingDetails.checkin;
+        checkoutInput.value = savedBookingDetails.checkout;
+        pricePerNightInput.value = savedBookingDetails.pricePerNight;
+        totalCostInput.value = savedBookingDetails.totalCost;
+    }
 });
