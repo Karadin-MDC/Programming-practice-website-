@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформація про бронювання</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="../Home page/index.html" class="home-link">
+        <img src="../ico/—Pngtree—vector house icon_4046257.png" alt="Домік">
+        <span>Головна</span>
+    </a>
+
+    <div class="booking-info-container">
+        <h1>Інформація про бронювання</h1>
+        <div id="bookingInfo">
+            <p><strong>Ім'я:</strong> <span id="nameDisplay"></span></p>
+            <p><strong>Електронна пошта:</strong> <span id="emailDisplay"></span></p>
+            <p><strong>Номер картки:</strong> <span id="cardNumberDisplay"></span></p>
+            <p><strong>Дата заїзду:</strong> <span id="checkinDisplay"></span></p>
+            <p><strong>Дата виїзду:</strong> <span id="checkoutDisplay"></span></p>
+            <p><strong>Ціна за ніч:</strong> <span id="pricePerNightDisplay"></span></p>
+            <p><strong>Загальна сума:</strong> <span id="totalCostDisplay"></span></p>
+        </div>
+        <button id="cancelBooking">Скасувати бронювання</button>
+        <a href="../End.screen/endScreen.html" class="button-link">
+            <button type="button">Завершити</button>
+        </a>
+    </div>
+
+    <script src="displayBooking.js"></script>
+</body>
+</html>
