@@ -68,7 +68,6 @@ footer {
     bottom: 0;
 }
 
-
 .hotel-container {
     background-color: #fff;
     padding: 150px;
@@ -90,15 +89,26 @@ footer {
     margin-left: 0px;
 }
 
-.hotel-container a {
+.hotel-container .hotel-details {
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 400px;
+    right: 50px;
+}
+
+.hotel-container .hotel-details a {
     font-weight: bold; 
     font-size: 24px; 
 }
-.hotel-container p {
+
+.hotel-container .hotel-details p {
+    margin-top: 10px;
+}
+
+.hotel-container .price {
     position: absolute;
-    top: 60px;
+    top: 200px;
     left: 400px;
+    color: #333;
+    font-weight: bold;
 }
